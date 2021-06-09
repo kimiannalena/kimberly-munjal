@@ -1,0 +1,38 @@
+* {
+  font-family: inter ui,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+
+// Ion Header
+
+ion-title span {
+  font-family: "Courier New", inherit, sans-serif;
+}
+
+.logo-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1rem;
+  background: #adfe51;
+  margin-left: 5px;
+}
+
+.blink-me {
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+// Ion Footer
+
+ion-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}

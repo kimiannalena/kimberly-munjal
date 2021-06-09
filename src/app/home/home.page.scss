@@ -1,32 +1,6 @@
-* {
-  font-family: inter ui,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
-  letter-spacing: 2px;
-}
+@import "src/app/app.component";
 
-// Ion Header
-ion-title {
-  font-family: "Courier New", inherit, sans-serif;
-}
-
-.logo-cursor {
-  display: inline-block;
-  width: 10px;
-  height: 1rem;
-  background: #adfe51;
-  margin-left: 5px;
-}
-
-.blink-me {
-  animation: blinker 1s infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-#container {
+.container {
   text-align: center;
   position: absolute;
   left: 0;
@@ -35,19 +9,21 @@ ion-title {
   transform: translateY(-50%);
 }
 
-#container strong {
+.container strong {
   font-size: 50px;
-  line-height: 100px;
   letter-spacing: 5px;
 }
 
-#container p {
+.info-and-links {
+  margin: 20px 0 0 0 ;
+}
+
+.container p {
   font-size: 25px;
+  letter-spacing: 1px;
   line-height: 50px;
-
   color: #8c8c8c;
-
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .social-icons a {
@@ -56,17 +32,16 @@ ion-title {
     font-size: 30px;
   }
   line-height: 40px;
-  margin: 0 5px;
+  margin: 0 10px 0;
 }
 
 .social-icons a:hover {
-
   ion-icon {
     color: white;
     cursor: pointer;
   }
 }
-#container a {
+
+.container a {
   text-decoration: none;
 }
-
