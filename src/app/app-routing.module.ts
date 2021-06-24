@@ -12,8 +12,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'terminal',
-    loadChildren: () => import('./terminal/terminal.module').then( m => m.TerminalPageModule)
+    path: 'scene',
+    loadChildren: () => import('./scene/scene.module').then( m => m.ScenePageModule)
   },
 ];
 
