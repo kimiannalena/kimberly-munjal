@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  inputContent: string;
+  constructor() {
+    this.inputContent = 'Glass Card'
+  }
 
 }
