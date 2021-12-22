@@ -11,5 +11,4 @@ export class HomePage {
   constructor() {
     this.inputContent = 'Glass Card'
   }
-
 }
