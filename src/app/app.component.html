@@ -1,15 +1,24 @@
 <ion-app>
-  <ion-header [translucent]="true">
+  <!-- <ion-header [translucent]="true">
     <ion-toolbar>
       <ion-title>
         <span>$ cd/ home/ </span>
         <span class="blink-me logo-cursor"></span>
       </ion-title>
-      <!-- <ion-button [routerLink]="'scene'">Scene</ion-button> -->
+       <ion-button [routerLink]="'scene'">Scene</ion-button> 
     </ion-toolbar>
+  </ion-header> -->
+
+  <ion-header>
+    <ion-title>
+      <span>$ cd/home/</span>
+      <span class="blink-me logo-cursor"></span>
+    </ion-title>
   </ion-header>
+  
   <div #rendererContainer></div>
   <ion-router-outlet></ion-router-outlet>
+
   <ion-footer>
     <ion-footer>© 2021</ion-footer>
   </ion-footer>
