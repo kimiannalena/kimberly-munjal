@@ -1,7 +1,7 @@
 @import "src/app/app.component";
 
 ion-content.background {
-  --background: url('../../assets/bgLaura.png') no-repeat center/cover;
+  --background: url('../../assets/blau-lila-2.png') no-repeat center/cover;
 }
 
 .card {
@@ -22,13 +22,13 @@ ion-content.background {
   transform: translateY(-50%);
 
   // glass morphism
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.5);
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.2);
   position: absolute;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
   display: block;
   margin: 0 auto;
 
@@ -41,6 +41,7 @@ ion-content.background {
 }
 
 .container strong {
+  color: #5d7094;
   font-size: 38px;
   letter-spacing: 5px;
 }
@@ -53,13 +54,13 @@ ion-content.background {
   font-size: 25px;
   letter-spacing: 1px;
   line-height: 50px;
-  color: #c7a681;
+  color: rgb(159, 184, 182);
   margin: 0 0 10px 0;
 }
 
 .social-icons a {
   ion-icon {
-    color: #dddcdc;
+    color: #7e95c0;
     font-size: 30px;
   }
   line-height: 40px;
@@ -68,7 +69,7 @@ ion-content.background {
 
 .social-icons a:hover {
   ion-icon {
-    color: #f5726b;
+    color: rgb(159, 184, 182);
     //color: #a55653;
     cursor: pointer;
   }
