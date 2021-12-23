@@ -104,15 +104,15 @@ ion-content.background {
 }
 
 .info-and-links {
-  margin: 20px 0 0 0 ;
+  margin: 1vh 0 0 0 ;
 }
 
 .social-icons a {
   ion-icon {
     color: $medium-blue;
-    font-size: 30px;
+    font-size: 40px;
   }
-  line-height: 40px;
+  line-height: 50px;
   margin: 0 10px 0;
 }
 
@@ -120,5 +120,12 @@ ion-content.background {
   ion-icon {
     color: $light-blue;
     cursor: pointer;
+  }
+}
+
+.projects {
+  a {
+    font-size: 25px;
+  color: $light-ocker;
   }
 }
