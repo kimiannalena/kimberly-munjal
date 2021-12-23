@@ -1,3 +1,5 @@
+@import "/src/global.scss";
+
 * {
   font-family: inter ui,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
   letter-spacing: 2px;
@@ -13,7 +15,7 @@ ion-title span {
   display: inline-block;
   width: 10px;
   height: 1rem;
-  background: #767c8b;
+  background: $dark-greyn;
   //background: #adfe51;
   margin-left: 5px;
 }

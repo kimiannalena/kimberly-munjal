@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { GlassCardComponent } from '../glass-card/glass-card.component';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { GlassCardComponent } from '../glass-card/glass-card.component';
   ],
   declarations: [
     HomePage,
-    GlassCardComponent
   ]
 })
 export class HomePageModule {}

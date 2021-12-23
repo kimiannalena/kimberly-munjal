@@ -1,7 +1,7 @@
 @import "src/app/app.component";
 
 ion-content.background {
-  --background: url('../../assets/blau-lila-2.png') no-repeat center/cover;
+  --background: url('../../assets/gelb-blau-2.png') no-repeat center/cover;
   z-index: -5;
 }
 
@@ -55,13 +55,13 @@ ion-content.background {
   font-size: 25px;
   letter-spacing: 1px;
   line-height: 50px;
-  color: rgb(159, 184, 182);
+  color: $light-ocker;
   margin: 0 0 10px 0;
 }
 
 .social-icons a {
   ion-icon {
-    color: #7e95c0;
+    color: $pale-ocker;
     font-size: 30px;
   }
   line-height: 40px;
@@ -70,7 +70,7 @@ ion-content.background {
 
 .social-icons a:hover {
   ion-icon {
-    color: rgb(159, 184, 182);
+    color: #E1E5E2;
     //color: #a55653;
     cursor: pointer;
   }
