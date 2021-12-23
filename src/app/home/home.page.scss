@@ -15,15 +15,15 @@ ion-content.background {
   height: auto;
 
   // position
-  position: absolute;
-  left: 30vw;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:  30vh auto;
 }
 
 .card {
-  // styling
+  // size
   width: 40vw;
   min-height: 300px;
   height: auto;
@@ -47,6 +47,7 @@ ion-content.background {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /* Flip the card on hover */
@@ -125,6 +126,10 @@ ion-content.background {
 }
 
 .projects {
+  margin-top: 2vh;
+  ion-button {
+    --background: #CFAA5E;
+  }
   a {
     font-size: 25px;
     color: $light-ocker;
