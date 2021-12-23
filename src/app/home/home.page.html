@@ -1,24 +1,68 @@
 <ion-content class="background" [fullscreen]="true">
-  <div class="container">
-    <strong>Kimberly Munjal</strong>
-    <br>
-    <div class="info-and-links">
-      <p>Full Stack Developer</p>
-      <p>{{ visitCount }}</p>
-      <div class="social-icons">
-        <a href="https://github.com/kimiannalena">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://twitter.com/kimi_annalena">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/kimberly-a-m/">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a onclick="window.open('/assets/files/2_lebenslauf.pdf')" target="_blank">
-          <ion-icon name="document-text-outline"></ion-icon>
-        </a>
+  <!-- <div class="container">
+    <div class="card">
+      <div class="flip-wrap front">
+      <div class="glass">
+        <strong>Kimberly Munjal</strong>
+        <br>
+        <div class="info-and-links">
+          <p>Full Stack Developer</p>
+          <p>{{ visitCount }}</p>
+          <div class="social-icons">
+            <a href="https://github.com/kimiannalena">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://twitter.com/kimi_annalena">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/kimberly-a-m/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a onclick="window.open('/assets/files/2_lebenslauf.pdf')" target="_blank">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
       </div>
+      </div>
+      <div class="flip-wrap back">
+        <div class="glass">
+          <p>rückseite</p>
+        </div>
+      </div>
+  </div>
+  </div> -->
+  <div class="container">
+    <div class="card">
+      <div class="front side glass">
+        <strong>Kimberly Munjal</strong>
+        <br>
+        <div class="info-and-links">
+          <p>Full Stack Developer</p>
+        </div>
+      </div>
+      
+      <div class="back side glass">
+        <div class="info-and-links">
+          <p>{{ visitCount }}</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/kimiannalena">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://twitter.com/kimi_annalena">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/kimberly-a-m/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a onclick="window.open('/assets/files/2_lebenslauf.pdf')" target="_blank">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+      
     </div>
   </div>
 </ion-content>
+
