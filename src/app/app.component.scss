@@ -7,9 +7,15 @@
 
 // Ion Header
 
-ion-title span {
-  font-family: 'Courier Prime', monospace;
-  color: $medium-blue;
+.back-home {
+  text-decoration: none;
+}
+
+ion-title {
+  span {
+    font-family: 'Courier Prime', monospace;
+    color: $medium-blue;
+  }
 }
 
 .logo-cursor {
