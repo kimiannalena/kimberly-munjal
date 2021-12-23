@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import * as THREE from 'three';
 
 @Component({
@@ -14,7 +15,11 @@ export class AppComponent implements AfterViewInit {
   camera = null;
   mesh = null;
 
-  constructor() {
+  currentPath: string;
+  event$: any;
+
+  constructor(private router: Router) {
+    // three.js
     this.scene = new THREE.Scene();
 
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
@@ -25,6 +30,15 @@ export class AppComponent implements AfterViewInit {
     this.mesh = new THREE.Mesh(geometry, material);
 
     this.scene.add(this.mesh);
+
+    // initialize variable
+    this.event$ = this.router.events.subscribe((event: NavigationEnd) => {
+      if(event instanceof NavigationStart) {
+        console.log(event.url);
+        this.currentPath = event.url;
+      }
+    });
+    
   }
 
   ngAfterViewInit() {
