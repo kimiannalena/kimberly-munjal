@@ -1,24 +1,19 @@
 <ion-app>
-  <!-- <ion-header [translucent]="true">
-    <ion-toolbar>
-      <ion-title>
-        <span>$ cd/ home/ </span>
-        <span class="blink-me logo-cursor"></span>
-      </ion-title>
-       <ion-button [routerLink]="'scene'">Scene</ion-button> 
-    </ion-toolbar>
-  </ion-header> -->
 
   <ion-header>
-    <a class="back-home" href="/home">
-      <ion-title>
+    <ion-toolbar>
+      <a slot="start" class="back-home" href="/home">
+        <ion-title>
+          <ion-img style="height:35px; width:35px;" src="/assets/icon/kmLogo_v3.png"></ion-img>
+        </ion-title>
+      </a>
+      <ion-title slot="end">
         <span class="path">$ cd{{ currentPath }}/</span>
         <span class="blink-me logo-cursor"></span>
       </ion-title>
-    </a>
-    
+    </ion-toolbar>    
   </ion-header>
-  
+
   <div #rendererContainer></div>
   <ion-router-outlet></ion-router-outlet>
 
