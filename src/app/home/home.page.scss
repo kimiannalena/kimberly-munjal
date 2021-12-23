@@ -40,6 +40,13 @@ ion-content.background {
 
   /* fix rendring bug in chrome */
   transform: rotate(0deg) translateZ(1px);
+
+  // position
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Flip the card on hover */
@@ -50,14 +57,10 @@ ion-content.background {
 
 /* glasscard  */
 .glass {
-  // position
-  text-align: center;
   position: absolute;
 
   // glass morphism
   background: rgba(255,255,255,0.5);
-  position: absolute;
-  display: block;
   margin: 0 auto;
   padding: 30px 0;
 
@@ -70,7 +73,14 @@ ion-content.background {
 
   // flip effect
   transform-style: preserve-3d;
-  transition: 0.3s; 
+  transition: 0.5s; 
+}
+
+/* glass content styling */
+.glass strong {
+  color: $dark-blue;
+  font-size: 38px;
+  letter-spacing: 5px;
 }
 
 .glass p {
@@ -81,11 +91,16 @@ ion-content.background {
   margin: 0 0 10px 0;
 }
 
-/* glass content styling */
-.glass strong {
-  color: $dark-blue;
-  font-size: 38px;
-  letter-spacing: 5px;
+.glass a {
+  text-decoration: none;
+}
+
+.glass .name {
+  margin: 8vh 0 0 0;
+}
+
+.glass .instruction {
+  color: $light-ocker;
 }
 
 .info-and-links {
@@ -106,16 +121,4 @@ ion-content.background {
     color: $light-blue;
     cursor: pointer;
   }
-}
-
-.glass a {
-  text-decoration: none;
-}
-
-.glass .name {
-  margin: 8vh 0 0 0;
-}
-
-.glass .instruction {
-  color: $light-ocker;
 }
