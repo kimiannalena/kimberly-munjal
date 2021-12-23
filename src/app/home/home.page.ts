@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
   inputContent: string;
-  visitCount: number = Number(localStorage.getItem("page_view"));
+  visitCount: number = 0;
+  aktuellerKeks: string = localStorage.getItem("personal_keks")
+  keks: string = 'meinPersönlicherKeks';
 
 
   constructor() {
@@ -15,12 +17,12 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.visitCount) {
-      this.visitCount = Number(this.visitCount) + 1;
-      localStorage.setItem("page_view", String(this.visitCount));
+    if (this.aktuellerKeks == this.keks) {
+      console.log(this.visitCount);
+      
     } else {
-      this.visitCount = 1;
-      localStorage.setItem("page_view", String(1));
+      localStorage.setItem("personal_keks", this.keks);
+      this.visitCount = Number(this.visitCount) + 1;
     }
   }
 }
