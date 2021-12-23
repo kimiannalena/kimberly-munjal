@@ -1,0 +1,7 @@
+@import "src/app/app.component";
+
+/* background */
+ion-content.background {
+  --background: url('../../assets/gelb-blau-2.png') no-repeat center/cover;
+  z-index: -5;
+}

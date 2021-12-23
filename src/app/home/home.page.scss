@@ -23,12 +23,12 @@ ion-content.background {
 }
 
 .card {
-  /* Styling */
+  // styling
   width: 40vw;
   min-height: 300px;
   height: auto;
   
-  /* card flipping effects */
+  // card flipping effects 
   transform-style: preserve-3d;
   transition: 0.6s; 
 }
@@ -96,7 +96,7 @@ ion-content.background {
 }
 
 .glass .name {
-  margin: 8vh 0 0 0;
+  margin: 6vh 0 0 0;
 }
 
 .glass .instruction {
