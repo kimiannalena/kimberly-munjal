@@ -34,7 +34,6 @@ ion-content.background {
 }
 
 .side {
-  position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -54,24 +53,18 @@ ion-content.background {
   // position
   text-align: center;
   position: absolute;
-  // left: 0;
-  // right: 0;
-  // top: 50%;
-  // transform: translateY(-50%);
 
   // glass morphism
   background: rgba(255,255,255,0.5);
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.2);
   position: absolute;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
   display: block;
   margin: 0 auto;
-
   padding: 30px 0;
+
   z-index: 2;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
@@ -84,13 +77,13 @@ ion-content.background {
   font-size: 25px;
   letter-spacing: 1px;
   line-height: 50px;
-  color: $light-ocker;
+  color: $medium-blue;
   margin: 0 0 10px 0;
 }
 
 /* glass content styling */
 .glass strong {
-  color: $medium-blue;
+  color: $dark-blue;
   font-size: 38px;
   letter-spacing: 5px;
 }
@@ -119,3 +112,10 @@ ion-content.background {
   text-decoration: none;
 }
 
+.glass .name {
+  margin: 8vh 0 0 0;
+}
+
+.glass .instruction {
+  color: $light-ocker;
+}
