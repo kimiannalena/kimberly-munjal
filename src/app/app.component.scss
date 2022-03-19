@@ -6,6 +6,9 @@
 }
 
 // Ion Header
+ion-header {
+  position: initial;
+}
 
 .back-home {
   text-decoration: none;
@@ -44,6 +47,7 @@ ion-footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: initial;
   padding: 30px 0;
   z-index: 200;
 }
