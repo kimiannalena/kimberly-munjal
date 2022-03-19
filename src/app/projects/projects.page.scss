@@ -1,23 +1,52 @@
 @import "/src/app/home/home.page.scss";
 
 // overwrite stylings
-.container {
-  // size
-  width: 20vw;
-  min-height: 200px;
-  height: auto;
-
-  margin: 0 0 20px 20px;
-}
 
 .content {
   margin-top: $navbar-height + 20px;
+
+  .container {
+    // size
+    width: 20vw;
+    min-height: 200px;
+    height: auto;
+  
+    margin: 0 0 20px 20px;
+  }
 }
+
+
 
 .card {
   // size
   width: 20vw;
   min-height: 200px;
-  height: auto;
+  // height: auto;
+  color: $dark-blue;
+
+  .side {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      word-break: break-all;
+      margin-top: 10%;
+    }
+
+    .duration {
+      color: $dark-blue;
+      opacity: 60%;
+    }
+
+    .tags {
+      margin-top: 20%;
+
+      ion-badge {
+        --background: #B7C1D0;
+        --color: #fff8ea;
+      }
+    }
+  }
+
 }
 

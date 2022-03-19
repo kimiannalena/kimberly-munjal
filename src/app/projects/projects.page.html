@@ -4,7 +4,15 @@
             <div class="card">
                <!-- front side -->
               <div class="front side glass">
-                {{ project.title }}
+                <small class="duration" *ngIf="project.beginning && project.ending">
+                  {{ project.beginning | date }}
+                  - 
+                  {{ project.ending | date }}
+                </small>
+                <div class="title">{{ project.title }}</div>
+                <div class="tags" *ngFor="let tag of project.tags">
+                  <ion-badge mode="ios">{{ tag.title }}</ion-badge>
+                </div>
               </div>
               
               <!-- back side -->
