@@ -7,7 +7,7 @@ import * as THREE from 'three';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnInit {
   @ViewChild('rendererContainer') rendererContainer: ElementRef;
 
   renderer = new THREE.WebGLRenderer();
@@ -41,8 +41,11 @@ export class AppComponent implements AfterViewInit {
     
   }
 
-  ngAfterViewInit() {
+  ngOnInit(): void {
     this.currentPath = 'home';
+  }
+
+  ngAfterViewInit() {
     // this.renderer.setSize(window.innerWidth, window.innerHeight);
     // this.rendererContainer.nativeElement.appendChild(this.renderer.domElement);
     // this.animate();
